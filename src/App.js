@@ -22,10 +22,13 @@ function App() {
     })
   }, [subreddit]);
   
+
+  // search bar returning searched articles
   return (
     <div className="App">
       <header className="App-header">
         <input type="text" className="input" value={subreddit} onChange={e => setSubreddit(e.target.value)} />
+          <img />
       </header>
       <div className="articles">
         {
